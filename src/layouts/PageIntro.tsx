@@ -3,7 +3,7 @@ import Emoji from "../assets/AlexEmoji.png";
 export function PageIntro() {
   return (
     <>
-      <div className="flex flex-col justify-center align-center text-center mb-10">
+      <div className="flex flex-col justify-center align-center text-center mb-10 mt-[100px]">
         <div className="flex justify-center">
           <img src={Emoji} className="h-[300px] w-[300px]" alt="alex emoji" />
         </div>
