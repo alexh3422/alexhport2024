@@ -6,6 +6,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        "alex-red": "#4C061D",
         secondary: {
           DEFAULT: colors.neutral[200],
           hover: colors.neutral[300],
