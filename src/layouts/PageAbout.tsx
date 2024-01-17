@@ -24,7 +24,7 @@ export function PageAbout() {
               the tech scene around me. Now, I'm excited to make my love for
               tech a part of my career. <br /> <br />
               Outside of work, I enjoy hanging out with family, watching or
-              playing soccer, taking photos, and, of course, coding. <br />
+              playing soccer, photography and of course, coding. <br />
               <br />
               What I find amazing about coding is the constant evolution. It
               feels like there's always something new to learn, and the idea
