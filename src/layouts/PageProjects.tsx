@@ -14,6 +14,12 @@ export function PageProjects() {
       description: `Business site for the Shoreline, WA based company Intuitive Fitness`,
       link: `https://intuitive-fitness-9mc7rn870-alexh34222s-projects.vercel.app/`,
     },
+    {
+      id: 2,
+      title: `Seattle Fire Department Call Log`,
+      description: `A website linked to the City of Seattle data API displaying current and previous Seattle Fire Department calls`,
+      link: `https://alexh34222.github.io/SFD/`,
+    },
   ];
 
   const projectLink = (link: string) => {
