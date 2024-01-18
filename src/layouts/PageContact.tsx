@@ -9,7 +9,7 @@ export function PageContact() {
           <h1>CONTACT</h1>
         </div>
         <div className="flex justify-center align-center text-center text-2xl">
-          You can contact me at&nbsp;-&nbsp;
+          You can contact me at -&nbsp;
           <a href="mailto:alex@alexhallcoding.com">alex@alexhallcoding.com</a>
         </div>
       </div>
