@@ -15,10 +15,16 @@ export function PageProjects() {
       link: `https://intuitive-fitness-9mc7rn870-alexh34222s-projects.vercel.app/`,
     },
     {
-      id: 2,
+      id: 3,
       title: `Seattle Fire Department Call Log`,
       description: `A website linked to the City of Seattle data API displaying current and previous Seattle Fire Department calls`,
       link: `https://alexh34222.github.io/SFD/`,
+    },
+    {
+      id: 4,
+      title: `Cattention`,
+      description: `A site for people to study together with a timer for breaks, they can create rooms and chat with each other - powered by Socket.io - *group project`,
+      link: `https://cattention.netlify.app/`,
     },
   ];
 
