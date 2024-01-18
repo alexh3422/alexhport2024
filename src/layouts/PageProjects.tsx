@@ -17,7 +17,7 @@ export function PageProjects() {
     {
       id: 3,
       title: `Seattle Fire Department Call Log`,
-      description: `A website linked to the City of Seattle data API displaying current and previous Seattle Fire Department calls`,
+      description: `A site linked to the City of Seattle data API displaying current and previous Seattle Fire Department calls`,
       link: `https://alexh34222.github.io/SFD/`,
     },
     {
