@@ -10,21 +10,9 @@ export function PageProjects() {
     },
     {
       id: 2,
-      title: `Project 2`,
-      description: `A terminal based app using the mySQL database`,
-      link: `https://github.com/alexh3422/sqlEmployeeTracker`,
-    },
-    {
-      id: 3,
-      title: `Project 3`,
-      description: `A terminal based app using the mySQL database`,
-      link: `https://github.com/alexh3422/sqlEmployeeTracker`,
-    },
-    {
-      id: 4,
-      title: `Project 4`,
-      description: `A terminal based app using the mySQL database`,
-      link: `https://github.com/alexh3422/sqlEmployeeTracker`,
+      title: `Intuitive Fitness`,
+      description: `Business site for the Shoreline, WA based company Intuitive Fitness`,
+      link: `https://intuitive-fitness-9mc7rn870-alexh34222s-projects.vercel.app/`,
     },
   ];
 
@@ -36,7 +24,7 @@ export function PageProjects() {
     <>
       <div
         id="projects"
-        className="flex flex-col justify-center align-center text-center mt-20"
+        className="flex flex-col justify-center align-center text-center mt-20 mb-20"
       >
         <div className="text-3xl mb-10">
           <h1>MY PROJECTS</h1>

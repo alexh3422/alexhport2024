@@ -5,7 +5,7 @@ export function PageAbout() {
     <>
       <div
         id="about"
-        className="flex flex-col justify-center align-center text-center"
+        className="flex flex-col justify-center align-center text-center mb-20"
       >
         <div className="text-3xl mb-10">
           <h1>ABOUT</h1>
