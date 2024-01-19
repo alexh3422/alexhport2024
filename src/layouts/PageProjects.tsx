@@ -26,6 +26,12 @@ export function PageProjects() {
       description: `A site for people to study together with a timer for breaks, they can create rooms and chat with each other - powered by Socket.io - *group project`,
       link: `https://cattention.netlify.app/`,
     },
+    {
+      id: 5,
+      title: `Firebase Auth Template`,
+      description: `A login/signup page template using Firebase Email/Password Authentication`,
+      link: `https://firebase-template-ahc.netlify.app/`,
+    },
   ];
 
   const projectLink = (link: string) => {
