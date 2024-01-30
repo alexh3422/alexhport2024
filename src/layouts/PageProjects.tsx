@@ -12,7 +12,7 @@ export function PageProjects() {
       id: 2,
       title: `Intuitive Fitness`,
       description: `Business site for the Shoreline, WA based company Intuitive Fitness`,
-      link: `https://intuitive-fitness-9mc7rn870-alexh34222s-projects.vercel.app/`,
+      link: `https://www.nwintuitivefit.com`,
     },
     {
       id: 3,
