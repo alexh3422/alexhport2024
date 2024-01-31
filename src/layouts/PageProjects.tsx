@@ -1,5 +1,5 @@
 import { Button } from "../components/Button";
-
+import { motion } from "framer-motion";
 export function PageProjects() {
   const projects = [
     {
@@ -51,12 +51,16 @@ export function PageProjects() {
           <div className="flex justify-center align-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
               <div key={project.id} onClick={() => projectLink(project.link)}>
-                <Button variant="alexRed" size="default">
-                  <div className="bg-white p-6 rounded-lg shadow-md">
-                    <h2 className="text-xl font-bold mb-2">{project.title}</h2>
-                    <p className="text-gray-600">{project.description}</p>
-                  </div>
-                </Button>
+                <motion.div whileHover={{ scale: 1.1 }}>
+                  <Button variant="alexRed" size="default">
+                    <div className="bg-white p-6 rounded-lg shadow-md">
+                      <h2 className="text-xl font-bold mb-2">
+                        {project.title}
+                      </h2>
+                      <p className="text-gray-600">{project.description}</p>
+                    </div>
+                  </Button>
+                </motion.div>
               </div>
             ))}
           </div>
