@@ -1,6 +1,13 @@
+import { useState } from "react";
 import { Button } from "../components/Button";
 
 export function PageHeader() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   const scrollToProjects = () => {
     const projects = document.getElementById("projects");
     if (projects) {
@@ -13,6 +20,7 @@ export function PageHeader() {
         behavior: "smooth",
       });
     }
+    setIsMenuOpen(false);
   };
 
   const scrollToAbout = () => {
@@ -27,6 +35,7 @@ export function PageHeader() {
         behavior: "smooth",
       });
     }
+    setIsMenuOpen(false);
   };
 
   const scrollToContact = () => {
@@ -41,6 +50,7 @@ export function PageHeader() {
         behavior: "smooth",
       });
     }
+    setIsMenuOpen(false);
   };
 
   const scrollToTop = () => {
@@ -49,13 +59,69 @@ export function PageHeader() {
 
   return (
     <div className="fixed top-0 left-0 right-0 bg-white shadow-md z-50 w-full mb-[100px]">
-      <div className="flex gap-10 lg:gap-20 justify-between align-center pt-2  mx-4 text-xl ">
+      <div className="flex gap-10 lg:gap-20 justify-between items-center pt-2 mx-4 text-xl ">
         <div className="flex gap-4 items-center lg:flex-shrink-0">
           <Button variant="ghost" size="default" onClick={scrollToTop}>
             <h1>ALEX HALL CODING</h1>
           </Button>
         </div>
-        <div className="flex flex-row gap-4 items-center justify-center lg:flex-shrink-0">
+        <div className="flex flex-row items-center lg:hidden">
+          {/* This menu icon will appear on small screens */}
+          <button
+            className="text-gray-600 hover:text-gray-900 focus:outline-none"
+            onClick={toggleMenu}
+          >
+            {isMenuOpen ? (
+              <svg
+                className="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              <svg
+                className="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            )}
+          </button>
+          {isMenuOpen && (
+            <div className="absolute top-0 right-0 mt-16 mr-4 flex flex-col items-center bg-white shadow-md py-2 px-4 rounded-md">
+              <Button variant="ghost" size="default" onClick={scrollToProjects}>
+                MY PROJECTS
+              </Button>
+              <Button variant="ghost" size="default" onClick={scrollToAbout}>
+                ABOUT
+              </Button>
+              <Button variant="ghost" size="default" onClick={scrollToContact}>
+                CONTACT
+              </Button>
+            </div>
+          )}
+        </div>
+        <div
+          className={`hidden lg:flex flex-row gap-4 items-center justify-center lg:flex-shrink-0 ${
+            isMenuOpen ? "flex" : "hidden"
+          }`}
+        >
           <Button variant="ghost" size="default" onClick={scrollToProjects}>
             MY PROJECTS
           </Button>

@@ -24,8 +24,8 @@ export function PageContact() {
         <div className="text-3xl mb-10">
           <h1>CONTACT</h1>
         </div>
-        <div className="flex justify-center align-center text-center text-2xl">
-          You can contact me at -&nbsp;
+        <div className="flex flex-col justify-center align-center text-center text-2xl mt-14">
+      
           <a href="mailto:alex@alexhallcoding.com">alex@alexhallcoding.com</a>
         </div>
         <div className="flex justify-center align-center text-center mt-10 mb-40 p-6">
