@@ -22,6 +22,20 @@ export function PageHeader() {
     }
     setIsMenuOpen(false);
   };
+  const scrollToToolbox = () => {
+    const toolbox = document.getElementById("toolbox");
+    if (toolbox) {
+      const offset = 100;
+      const rect = toolbox.getBoundingClientRect();
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+      window.scrollTo({
+        top: rect.top + scrollTop - offset,
+        behavior: "smooth",
+      });
+    }
+    setIsMenuOpen(false);
+  };
 
   const scrollToAbout = () => {
     const about = document.getElementById("about");
@@ -108,6 +122,9 @@ export function PageHeader() {
               <Button variant="ghost" size="default" onClick={scrollToProjects}>
                 MY PROJECTS
               </Button>
+              <Button variant="ghost" size="default" onClick={scrollToToolbox}>
+                MY TOOLBOX
+              </Button>
               <Button variant="ghost" size="default" onClick={scrollToAbout}>
                 ABOUT
               </Button>
@@ -124,6 +141,9 @@ export function PageHeader() {
         >
           <Button variant="ghost" size="default" onClick={scrollToProjects}>
             MY PROJECTS
+          </Button>
+          <Button variant="ghost" size="default" onClick={scrollToToolbox}>
+            MY TOOLBOX
           </Button>
           <Button variant="ghost" size="default" onClick={scrollToAbout}>
             ABOUT
