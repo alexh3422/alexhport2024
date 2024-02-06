@@ -15,7 +15,7 @@ export function PageAbout() {
             className="h-auto w-[80%] md:w-full"
           />
         </div>
-        <div className="flex flex-col justify-center items-center text-center w-full md:w-1/2 md:order-2 md:mt-0 md:ml-4">
+        <div className="flex flex-col justify-center items-center text-center w-full md:w-1/2 md:order-2  md:ml-4">
           {/* Text section */}
           <div className="text-xl">
             <p>

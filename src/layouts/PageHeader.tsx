@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Button } from "../components/Button";
+import { Typing } from "react-typing-animate";
 
 export function PageHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -74,13 +75,10 @@ export function PageHeader() {
   return (
     <div className="fixed top-0 left-0 right-0 bg-white shadow-md z-50 w-full mb-[100px]">
       <div className="flex gap-10 lg:gap-20 justify-between items-center pt-2 mx-4 text-xl ">
-        <div className="flex gap-4 items-center lg:flex-shrink-0">
-          <Button variant="ghost" size="default" onClick={scrollToTop}>
-            <h1>ALEX HALL CODING</h1>
-          </Button>
-        </div>
+        <Button variant="ghost" size="default" onClick={scrollToTop}>
+          <Typing text={['Alex Hall Coding']} speed={300} />
+        </Button>
         <div className="flex flex-row items-center lg:hidden">
-          {/* This menu icon will appear on small screens */}
           <button
             className="text-gray-600 hover:text-gray-900 focus:outline-none"
             onClick={toggleMenu}
