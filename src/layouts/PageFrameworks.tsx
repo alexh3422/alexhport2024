@@ -56,13 +56,16 @@ export function PageFrameworks() {
   ];
 
   return (
-    <div id="toolbox" className="flex flex-col justify-center items-center mb-20">
-      <div className="overflow-x-scroll w-full">
+    <div
+      id="toolbox"
+      className="flex flex-col justify-center items-center mb-20"
+    >
+      <div className=" w-full">
         <div className="flex flex-col justify-center items-center text-center mb-10 mt-10">
           <div className="text-3xl mb-10">
             <h1>MY TOOLBOX</h1>
           </div>
-          <div className="grid grid-cols-3 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-3 md:grid-cols-4 gap-8 mb-4">
             {frameworks.map((framework) => (
               <div
                 key={framework.id}
