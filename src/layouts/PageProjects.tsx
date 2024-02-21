@@ -2,18 +2,18 @@ import { Button } from "../components/Button";
 import { motion } from "framer-motion";
 export function PageProjects() {
   const projects = [
-    {
-      id: 1,
-      title: `mySQL Employee Tracker`,
-      description: `A terminal based app using the mySQL database`,
-      link: `https://github.com/alexh3422/sqlEmployeeTracker`,
-    },
-    {
-      id: 2,
-      title: `Intuitive Fitness`,
-      description: `Business site for the Shoreline, WA based company Intuitive Fitness`,
-      link: `https://www.nwintuitivefit.com`,
-    },
+    // {
+    //   id: 1,
+    //   title: `mySQL Employee Tracker`,
+    //   description: `A terminal based app using the mySQL database`,
+    //   link: `https://github.com/alexh3422/sqlEmployeeTracker`,
+    // },
+    // {
+    //   id: 2,
+    //   title: `Intuitive Fitness`,
+    //   description: `Business site for the Shoreline, WA based company Intuitive Fitness`,
+    //   link: `https://www.nwintuitivefit.com`,
+    // },
     {
       id: 3,
       title: `Seattle Fire Department Call Log`,
@@ -44,7 +44,7 @@ export function PageProjects() {
         id="projects"
         className="flex flex-col justify-center align-center text-center mt-20 mb-20"
       >
-        <div className="text-3xl mb-10">
+        <div className="title text-3xl mb-10">
           <h1>MY PROJECTS</h1>
         </div>
         <div className="mx-auto max-w-[70%]  p-5">
@@ -54,10 +54,12 @@ export function PageProjects() {
                 <motion.div whileHover={{ scale: 1.1 }}>
                   <Button variant="alexRed" size="default">
                     <div className="bg-white p-6 rounded-lg shadow-md">
-                      <h2 className="text-xl font-bold mb-2">
+                      <h2 className=" title text-2xl font-bold mb-2">
                         {project.title}
                       </h2>
-                      <p className="text-gray-600">{project.description}</p>
+                      <p className=" content text-gray-600">
+                        {project.description}
+                      </p>
                     </div>
                   </Button>
                 </motion.div>

@@ -21,11 +21,10 @@ export function PageContact() {
         id="contact"
         className="flex flex-col justify-center align-center text-center mt-20 p-8 mb-20"
       >
-        <div className="text-3xl mb-10">
+        <div className="title text-3xl mb-10">
           <h1>CONTACT</h1>
         </div>
-        <div className="flex flex-col justify-center align-center text-center text-2xl mt-14">
-      
+        <div className="content flex flex-col justify-center align-center text-center text-2xl mt-14">
           <a href="mailto:alex@alexhallcoding.com">alex@alexhallcoding.com</a>
         </div>
         <div className="flex justify-center align-center text-center mt-10 mb-40 p-6">

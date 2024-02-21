@@ -2,8 +2,11 @@ import Camano from "../assets/Camano.webp";
 
 export function PageAbout() {
   return (
-    <div id="about" className="flex flex-col justify-center items-center text-center mb-20">
-      <div className="text-3xl mb-10">
+    <div
+      id="about"
+      className="flex flex-col justify-center items-center text-center mb-20"
+    >
+      <div className="title text-3xl mb-10">
         <h1>ABOUT</h1>
       </div>
       <div className="flex flex-col md:flex-row justify-center items-center text-center w-full max-w-[75%] mx-auto mt-5">
@@ -17,7 +20,7 @@ export function PageAbout() {
         </div>
         <div className="flex flex-col justify-center items-center text-center w-full md:w-1/2 md:order-2  md:ml-4">
           {/* Text section */}
-          <div className="text-xl">
+          <div className="content text-xl">
             <p>
               I grew up in Seattle's Magnolia neighborhood and always admired
               the tech scene around me. Now, I'm excited to make my love for
