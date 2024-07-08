@@ -35,8 +35,7 @@ export function PageAbout() {
             <p>
               What I find amazing about coding is the constant evolution. It
               feels like there's always something new to learn, and the idea
-              that I'll keep growing excites me. My goal is to craft efficient
-              code that produces visually appealing and intuitive products.
+              that I'll keep growing excites me. 
             </p>
           </div>
         </div>
